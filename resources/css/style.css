@@ -1,0 +1,348 @@
+
+
+
+body {
+  overflow-x: hidden; 
+  font-family: 'Inter', sans-serif;
+  color: var(--c-main);
+}
+hr{
+  border-color: 1px solid var(--c-main);
+
+}
+.justified{
+  text-align: justify;
+}
+:root{
+    --c-main:#14213e;
+    --c-second:#E5E5E5;
+    --c-accen: #FCA311;
+}
+
+.txtMain{
+    color: var(--c-main);
+  }
+  .txtAccent{
+    color: var(--c-accen);
+  }
+  .txtSecond{
+    color: var(--c-second);
+  }
+  .bgMain{
+    background-color: var(--c-main);
+  }
+  .bgAccent{
+    background-color: var(--c-accen);
+  }
+  .bgSecond{
+    background-color: var(--c-second);
+  }
+  .allArticles{
+    margin-top: 70px;
+  }
+  .btn-addArt {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 8px 12px;
+    border: 1px solid rgb(20, 33, 62);
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 16px;
+    color: rgb(20, 33, 62);;
+    z-index: 1;
+   }
+   
+   .btn-addArt:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+   }
+   
+   .btn-addArt:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color:    #FCA311;
+;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+   }
+   
+   .btn-addArt:hover {
+    color: #ffffff;
+    border: 1px solid     #FCA311;
+;
+   }
+   
+   .btn-addArt:hover:before {
+    top: -35%;
+    background-color:    #FCA311;
+;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+   }
+   
+   .btn-addArt:hover:after {
+    top: -45%;
+    background-color:     #FCA311;
+;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+   }
+
+   /* Menù categories */
+   .menuCategoriesHover{
+    color: var(--c-main);
+    
+   }
+   .menuCategoriesHover:hover{
+    color: var(--c-accen);
+    
+  }
+
+
+  /* Logo */
+   .logoHover{
+    margin-left: 10px;
+    transition: transform 0.5s ease-out;
+
+   }
+   .logoHover:hover{
+    transform: scale(1.1);
+   }
+
+   /* TitoloPrincipale */
+   .bigTitle{
+    margin-top: 100px;
+   }
+
+
+   .button_Button{
+    border-radius: 51px;
+    background-color: var(--c-accen);
+    border: 1.5px solid var(--c-second) ;
+    color: var(--c-main);
+  }
+
+    .button_Button_One
+    { 
+      width: 113px;
+      height: 48px;
+      border: 0.5px solid white;
+      
+      border-radius: 51px;
+      color:var(--c-main)
+    }
+      input::placeholder {
+        text-indent: 20px;
+      }
+  
+      input:focus {
+        outline:#14213e;
+        
+      }
+      input{
+        padding-left: 20px;
+      }
+      .searchImg:hover{
+        color: var(--c-second);
+      }
+    .customCard{
+      box-sizing: border-box;
+      width: 300px;
+      height: 370px;
+      background: rgba(217, 217, 217, 0.58);
+      border: 1px solid white;
+      box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+      backdrop-filter: blur(6px);
+      border-radius: 17px;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.7s;
+      /* display: flex; */
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      font-weight: bolder;
+      }
+      .customCard:hover {
+        border: 0.5px solid #26324c;
+        transform: scale(1.01);
+      }
+      
+      /* .customCard:active {
+        transform: scale(0.95) rotateZ(1.7deg);
+      } */
+      
+.textCard{
+  margin-left: 12px;
+
+}
+.picShow{
+  background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.794) 0%, rgba(252, 181, 67, 0.694) 0%), url(/public/media/1.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size:cover ;
+  height: 170px;
+}
+
+.size_show{
+  margin-top: 50px;
+  
+}
+.categoryPc{
+  display: none;
+
+
+}
+.footerMobile{
+  display: block;
+  
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(0);
+  transition: all 1.5s;
+}
+
+.hidden-left {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1.5s;
+}
+
+.hidden-right {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1.5s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.addArtPc{
+  margin-right: 25px;
+   display: none;
+}
+.logoTrasp{
+  height: 55px;
+  width: 55px;
+  margin-left: -8px;
+  margin-top: -11px;
+}
+
+.categoryForMobile{
+  display: contents;
+}
+.spanRevisor{
+  position: absolute;
+  top: 0;
+  background: red;
+  right: 100;
+}
+.sloganIndex{
+  color: black;
+  position: absolute;
+  top:200px;
+  left: 85px;
+    
+}
+.img-preview{
+  height: 500px;
+  width: 500px;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+.imageShow{
+  width: 600px;
+  height: 400px;
+ 
+}
+.linguePc{
+
+display: none;
+}
+.lingueMobile{
+  display: flex;
+  justify-content: flex-end;
+}
+.fotoTeam{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+
+}
+.sloganWelcome{
+  background: rgb(255,255,255);
+background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255,190,83,1) 100%);
+height: 43vh;
+}
+.bgFooter{
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255,190,83,1) 100%);  
+  height: 20vh;
+
+}
+.borderCustom{
+  border: 1px solid #fca311;
+}
+
+.favorite-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.fas.fa-heart {
+  fill: red; /* Cambia il colore di riempimento dell'icona quando è pieno */
+  color: red; /* Cambia il colore del testo dell'icona quando è pieno */
+}
+.favorite-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 1.5rem;
+}
+
+.favorite-icon .bi-heart-fill {
+  color: red;
+}
+
+.favorite-icon .bi-heart {
+  color: black;
+}
+
+.favorite-button.active .favorite-icon .bi-heart {
+  display: none;
+}
+
+.favorite-button.active .favorite-icon .bi-heart-fill {
+  display: inline-block;
+}
+.contattaciPc{
+  display: none;
+}
